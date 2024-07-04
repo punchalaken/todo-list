@@ -5,7 +5,6 @@ import MainContentComponent from './components/MainContentComponent.vue';
 </script>
 
 <template>
-
     <HeaderMainComponent/>
 
     <MainContentComponent/>

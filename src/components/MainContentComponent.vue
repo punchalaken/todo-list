@@ -62,6 +62,4 @@ import MainInputsComponent from './MainContent/MainInputsComponent.vue';
         }
 }
 
-
-
 </style>
