@@ -8,7 +8,7 @@ const deadLine = ref('');
 const nameError = ref(false);
 const contentError = ref(false);
 const deadLineError = ref(false);
-const nowDate = () => {
+const nowDate = ():string => {
             let nowDate = new Date();
             let year = nowDate.getFullYear();
             let month = (nowDate.getMonth() + 1).toString().padStart(2, '0');
@@ -16,7 +16,7 @@ const nowDate = () => {
             return `${year}-${month}-${day}`;
         };
 
-function addToDo() {
+function addToDo():void {
     if (!name.value.trim()) {
         nameError.value = true;
     } else {

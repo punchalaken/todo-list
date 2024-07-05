@@ -3,7 +3,7 @@ import { ref } from 'vue';
 
 let easterOn = ref('')
 
-function easterTurnOn(){
+function easterTurnOn():void { 
     easterOn.value = 'On'
     setTimeout(() => {
         easterOn.value = ''

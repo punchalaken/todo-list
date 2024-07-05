@@ -10,7 +10,7 @@ export interface toDoObject {
 export const useToDoStore = defineStore('ToDoStore', () => {
   const ToDo: Ref<toDoObject[]> = ref([])
 
-  const addToDo = function(name: string, content: string, deadLine: string){
+  const addToDo = function(name: string, content: string, deadLine: string): void{
     ToDo.value.push({
         name,
         content,
